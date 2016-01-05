@@ -2,6 +2,8 @@ basic styling
 {
 
     defensive coding, define some styles both on the tag and in the header 
+    
+    email clients are much less forgiving of syntax errors/unclosed tags, etc.
 
     style everything on the table cell (most reliable style rendering)
     use spans for overrides if necessary
@@ -24,4 +26,29 @@ basic styling
         padding {
             table, cell, alignment, css3 rounded corners, padding on cell, bgcolor (only text is clickable)
         }]
+}
+
+deeper {
+    media queries
+    {
+        support varies per device/app/OS
+        samsung kitkat doesn't support in native app
+        
+        use attribute selectors (img[class="logo"], deals with a yahoo app bug)
+        
+        !important overrides inline styles
+        
+        iphones will increase font sizes to 13px if they are defined lower
+        (override included in template)
+    }
+    
+    adding responsive behavior
+    {
+        emails are generally desktop first, then mobile
+        -- or -- 
+        the media queries are primarily meant for mobile clients
+        
+        fluid images
+        add class="fluid-image" to img tag
+    }
 }

@@ -8,37 +8,54 @@
     <meta name="viewport" content="width=device-width">
     <style type="text/css">
         /* CLIENT-SPECIFIC STYLES ******/
+
         #outlook a {
-            padding: 0; /* force outlook to provide a "view in browser" message */
+            padding: 0;
+            /* force outlook to provide a "view in browser" message */
         }
 
         .ReadMsgBody {
-            width: 100%; /* force hotmail to display emails at full width */
+            width: 100%;
+            /* force hotmail to display emails at full width */
         }
 
         .ExternalClass {
-            width: 100%; /* force hotmail to display emails at full width */
+            width: 100%;
+            /* force hotmail to display emails at full width */
         }
 
-        .ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div {
-            line-height: 100%; /* force hotmail to display normal line spacing */
+        .ExternalClass,
+        .ExternalClass p,
+        .ExternalClass span,
+        .ExternalClass font,
+        .ExternalClass td,
+        .ExternalClass div {
+            line-height: 100%;
+            /* force hotmail to display normal line spacing */
         }
 
-        body, table, td, a { /* prevent webkit and windows mobile changing default text sizes */
+        body,
+        table,
+        td,
+        a {
+            /* prevent webkit and windows mobile changing default text sizes */
             -webkit-text-size-adjust: 100%;
             -ms-text-size-adjust: 100%;
         }
 
-        table, td { /* remove spacing between tables in outlook 2007 and up */
+        table,
+        td {
+            /* remove spacing between tables in outlook 2007 and up */
             mso-table-lspace: 0pt;
             mso-table-rspace: 0pt;
         }
 
-        img { /* allow smoother rendering of resized image in IE */
+        img {
+            /* allow smoother rendering of resized image in IE */
             -ms-interpolation-mode: bicubic;
         }
-
         /* RESET STYLES ****************/
+
         body {
             height: 100% !important;
             margin: 0;
@@ -57,14 +74,41 @@
         table {
             border-collapse: collapse !important;
         }
-
         /* iOS blue links (aggressively linked content) */
+
         .apple-links a {
             color: #999999;
             text-decoration: none;
         }
-
         /* MOBILE STYLES ***************/
+
+        @media screen and (max-width: 600px) {
+            td[class="logo"] img {
+                margin: 0 auto !important;
+            }
+            table[class="wrapper"] {
+                width: 100% !important;
+            }
+            img[class="fluid-image"] {
+                width: 100% !important;
+                height: auto !important;
+            }
+            td[class="mobile-image-pad"] {
+                padding: 10px 10px 10px 10px !important;
+            }
+            td[class="mobile-button"] {
+                padding: 12px 60px 12px 60px !important;
+            }
+            td[class="mobile-button"] a {
+                font-size: 24px !important;
+            }
+            td[class="mobile-title-pad"] {
+                padding: 30px 10px 0px 10px !important;
+            }
+            td[class="mobile-text-pad"] {
+                padding: 10px 10px 10px 10px !important;
+            }
+        }
     </style>
 </head>
 
@@ -76,17 +120,17 @@
     </div>
 
     <!-- CONTAINER TABLE (sets bgcolor for section) -->
-    <table border="0" cellpadding="0" cellspacing="0" width="100%"  bgcolor="#1F1F1F" style="padding: 20px 0 20px 0; table-layout: fixed;">
+    <table border="0" cellpadding="0" cellspacing="0" width="100%" bgcolor="#1F1F1F" style="padding: 20px 0 20px 0; table-layout: fixed;">
         <tr>
-            <td>
+            <td style="padding: 20px 0 20px 0;">
                 <!-- WRAPPER TABLE (sets body width) -->
-                <table border="0" cellpadding="0" cellspacing="0" width="600">
+                <table border="0" cellpadding="0" cellspacing="0" width="600" style="margin: 0 auto;" class="wrapper">
                     <tr>
                         <td>
                             <!-- CONTENT TABLE -->
                             <table border="0" cellpadding="0" cellspacing="0" width="100%">
                                 <tr>
-                                    <td align="left">
+                                    <td align="left" class="logo" style="padding: 10px 10px 10px 10px;">
                                         <img alt="the logo" style="font-family: Arial; font-size: 20px; color: #999999;" height="50" width="150" style="display: block;" />
                                     </td>
                                     <td align="right">
@@ -105,29 +149,29 @@
         <tr>
             <td>
                 <!-- WRAPPER TABLE (sets body width) -->
-                <table border="0" cellpadding="0" cellspacing="0" width="600">
+                <table border="0" cellpadding="0" cellspacing="0" width="600" style="margin: 0 auto;" class="wrapper">
                     <tr>
-                        <td>
+                        <td style="padding: 20px 0 0 0;">
                             <!-- CONTENT TABLE (two-column) -->
                             <table border="0" cellpadding="0" cellspacing="0" width="100%">
                                 <tr>
                                     <td>
-                                        <table border="0" cellpadding="0" cellspacing="0" width="47%" align="left">
+                                        <table border="0" cellpadding="0" cellspacing="0" width="47%" align="left" class="wrapper">
                                             <tr>
-                                                <td align="left">Steve wants reflections, so let's give him reflections. This is the way you take out your flustrations. You could sit here for weeks with your one hair brush trying to do that - or you could do it with one stroke with an almighty brush. Remember how free clouds are. They just lay around in the sky all day long. These trees are so much fun. I get started on them and I have a hard time stopping. Only eight colors that you need. Trees get lonely too, so we'll give him a little friend. We spend so much of our life looking - but never seeing. When things happen - enjoy them. They're little gifts. Let the paint work. And I know you're saying, 'Oh Bob, you've done it this time.' And you may be right. Look around, look at what we have. Beauty is everywhere, you only have to look to see it. That's what makes life fun. That you can make these decisions. That you can create the world that you want. You can get away with a lot.</td>
+                                                <td align="left" class="mobile-text-pad" style="font-family: 'Trebuchet MS', Verdana, san-serif; padding-bottom: 20px">Steve wants reflections, so let's give him reflections. This is the way you take out your flustrations. You could sit here for weeks with your one hair brush trying to do that - or you could do it with one stroke with an almighty brush. Remember how free clouds are. They just lay around in the sky all day long. These trees are so much fun. I get started on them and I have a hard time stopping. Only eight colors that you need. Trees get lonely too, so we'll give him a little friend. We spend so much of our life looking - but never seeing. When things happen - enjoy them. They're little gifts. Let the paint work. And I know you're saying, 'Oh Bob, you've done it this time.' And you may be right. Look around, look at what we have. Beauty is everywhere, you only have to look to see it. That's what makes life fun. That you can make these decisions. That you can create the world that you want. You can get away with a lot.</td>
                                             </tr>
                                             <tr>
-                                                <td align="left">Nice little clouds playing around in the sky. Work that paint. Every highlight needs it's own personal shadow. God gave you this gift of imagination. Use it. The light is your friend. Preserve it. I guess I'm a little weird. I like to talk to trees and animals. That's okay though; I have more fun than most people. Let's make a nice big leafy tree. You can't make a mistake. Anything that happens you can learn to use - and make something beautiful out of it. This present moment is perfect simply due to the fact you're experiencing it. Pretend you're water. Just floating without any effort. Having a good day. Now, we're going to fluff this cloud. You can work and carry-on and put lots of little happy things in here. No pressure. Just relax and watch it happen. We'll throw some old gray clouds in here just sneaking around and having fun.
+                                                <td align="left" class="mobile-text-pad" style="font-family: 'Trebuchet MS', Verdana, san-serif; padding-bottom: 20px">Nice little clouds playing around in the sky. Work that paint. Every highlight needs it's own personal shadow. God gave you this gift of imagination. Use it. The light is your friend. Preserve it. I guess I'm a little weird. I like to talk to trees and animals. That's okay though; I have more fun than most people. Let's make a nice big leafy tree. You can't make a mistake. Anything that happens you can learn to use - and make something beautiful out of it. This present moment is perfect simply due to the fact you're experiencing it. Pretend you're water. Just floating without any effort. Having a good day. Now, we're going to fluff this cloud. You can work and carry-on and put lots of little happy things in here. No pressure. Just relax and watch it happen. We'll throw some old gray clouds in here just sneaking around and having fun.
                                                 </td>
                                             </tr>
                                         </table>
-                                        <table border="0" cellpadding="0" cellspacing="0" width="47%" align="right">
+                                        <table border="0" cellpadding="0" cellspacing="0" width="47%" align="right" class="wrapper">
                                             <tr>
-                                                <td align="left">Nice little clouds playing around in the sky. Work that paint. Every highlight needs it's own personal shadow. God gave you this gift of imagination. Use it. The light is your friend. Preserve it. I guess I'm a little weird. I like to talk to trees and animals. That's okay though; I have more fun than most people. Let's make a nice big leafy tree. You can't make a mistake. Anything that happens you can learn to use - and make something beautiful out of it. This present moment is perfect simply due to the fact you're experiencing it. Pretend you're water. Just floating without any effort. Having a good day. Now, we're going to fluff this cloud. You can work and carry-on and put lots of little happy things in here. No pressure. Just relax and watch it happen. We'll throw some old gray clouds in here just sneaking around and having fun.
+                                                <td align="left" class="mobile-text-pad" style="font-family: 'Trebuchet MS', Verdana, san-serif; padding-bottom: 20px">Nice little clouds playing around in the sky. Work that paint. Every highlight needs it's own personal shadow. God gave you this gift of imagination. Use it. The light is your friend. Preserve it. I guess I'm a little weird. I like to talk to trees and animals. That's okay though; I have more fun than most people. Let's make a nice big leafy tree. You can't make a mistake. Anything that happens you can learn to use - and make something beautiful out of it. This present moment is perfect simply due to the fact you're experiencing it. Pretend you're water. Just floating without any effort. Having a good day. Now, we're going to fluff this cloud. You can work and carry-on and put lots of little happy things in here. No pressure. Just relax and watch it happen. We'll throw some old gray clouds in here just sneaking around and having fun.
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td align="left">Steve wants reflections, so let's give him reflections. This is the way you take out your flustrations. You could sit here for weeks with your one hair brush trying to do that - or you could do it with one stroke with an almighty brush. Remember how free clouds are. They just lay around in the sky all day long. These trees are so much fun. I get started on them and I have a hard time stopping. Only eight colors that you need. Trees get lonely too, so we'll give him a little friend. We spend so much of our life looking - but never seeing. When things happen - enjoy them. They're little gifts. Let the paint work. And I know you're saying, 'Oh Bob, you've done it this time.' And you may be right. Look around, look at what we have. Beauty is everywhere, you only have to look to see it. That's what makes life fun. That you can make these decisions. That you can create the world that you want. You can get away with a lot.</td>
+                                                <td align="left" class="mobile-text-pad" style="font-family: 'Trebuchet MS', Verdana, san-serif; padding-bottom: 20px">Steve wants reflections, so let's give him reflections. This is the way you take out your flustrations. You could sit here for weeks with your one hair brush trying to do that - or you could do it with one stroke with an almighty brush. Remember how free clouds are. They just lay around in the sky all day long. These trees are so much fun. I get started on them and I have a hard time stopping. Only eight colors that you need. Trees get lonely too, so we'll give him a little friend. We spend so much of our life looking - but never seeing. When things happen - enjoy them. They're little gifts. Let the paint work. And I know you're saying, 'Oh Bob, you've done it this time.' And you may be right. Look around, look at what we have. Beauty is everywhere, you only have to look to see it. That's what makes life fun. That you can make these decisions. That you can create the world that you want. You can get away with a lot.</td>
                                             </tr>
                                         </table>
                                     </td>
@@ -139,6 +183,30 @@
             </td>
         </tr>
     </table>
+
+    <!-- CONTAINER TABLE (sets bgcolor for section) -->
+    <table border="0" cellpadding="0" cellspacing="0" width="100%" bgcolor="#dddddd" style="table-layout: fixed;">
+        <tr>
+            <td style="padding: 10px 0 10px 0;">
+                <!-- WRAPPER TABLE (sets body width) -->
+                <table border="0" cellpadding="0" cellspacing="0" width="600" style="margin: 0 auto;" class="wrapper">
+                    <tr>
+                        <td>
+                            <!-- CONTENT TABLE -->
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%" align="center">
+                                <tr>
+                                    <td align="center" class="disclaimer" style="font-family: Arial, san-serif; font-size: 10px; color: #666666;">
+                                        Disclaimer text goes here
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+
 </body>
 
 </html>
