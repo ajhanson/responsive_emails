@@ -1,0 +1,27 @@
+basic styling 
+{
+
+    defensive coding, define some styles both on the tag and in the header 
+
+    style everything on the table cell (most reliable style rendering)
+    use spans for overrides if necessary
+
+    possibly use grunt to generate inline styles?
+
+    gmail app and samsung email app strip style block
+
+    define line heights in pixels (4px more than font size for body styles)
+
+    styled alt text (style element on the img tag will affect the way the alt text is rendered when images are blocked)
+
+    buttons: [
+        VML { 
+            MS-specific language
+        },
+        border {
+            put the styles on the anchor tag
+        },
+        padding {
+            table, cell, alignment, css3 rounded corners, padding on cell, bgcolor (only text is clickable)
+        }]
+}
