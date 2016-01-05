@@ -51,4 +51,24 @@ deeper {
         fluid images
         add class="fluid-image" to img tag
     }
+    
+    webfonts
+    {
+    
+        add an outlook workaround (defaults to TNR if webfont is used)
+    
+    
+        @font-face {
+        
+        }
+        
+        @import {
+        
+        }
+        
+        <link> {
+        
+        }
+    }
+    
 }
